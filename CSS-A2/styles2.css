@@ -1,0 +1,13 @@
+body{
+  background-image: url(goth.jpg);
+  background-size: cover;
+}
+pre
+{
+  background-size: cover;
+ background-color: aqua;
+}
+.image
+{
+  position: relative;
+}

@@ -1,0 +1,51 @@
+
+
+
+body
+{
+  background-color: rgb(144, 148, 151);
+  padding: 20%;
+  font: arial;
+  fallback: serif ;
+  margin-top: 0%;
+}
+
+
+
+.container{
+width: auto;
+align-items: center;
+background-color: white;
+padding: 5%;
+border-radius: 10%;
+
+box-shadow: 10px 10px black;
+
+
+}
+h1
+{
+ 
+color: blueviolet;
+word-spacing: 10%;
+line-height: 2%;
+}
+h2
+{
+color: coral;
+word-spacing: 10%;
+line-height: 2%;
+}
+ul
+{
+padding-left: 2%;
+word-spacing: 10%;
+
+}
+img {
+  border: 1px solid #000000; /* Adds a thin light gray border */
+  padding: 5px; /* Space between border and image content */
+}
+a{
+  color: blueviolet;
+}
