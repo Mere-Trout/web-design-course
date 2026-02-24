@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+      <title>
+        Registration
+      </title>
+      <link rel = "stylesheet" href = styles.css>
+
+</head>
+
+
+
+<Body>
+
+  <div class = "mainHeader">
+    <header>
+       SportsNow
+    </header>
+
+   
+  </div>
+
+
+<div class = "subHeader">
+      <header>
+      REGISTRATION
+      </header> 
+</div>
+  
+<div class = "mainBG">
+    
+     
+
+      
+
+      <div class = "upcomingTable">
+        <table>
+          <tr style = "background-color: black">
+            <h3 style="font-weight: bold";>Upcoming Events<h3>
+            <th>
+              Event
+            </th>
+            <th>
+              Date
+            </th>
+            <th>
+              Time
+            </th>
+            <th>
+              Location
+            </th>
+
+          </tr>
+             <td>Basketball 🏀</td>
+              <td>October 26,2026</td>
+               <td>8:00pm-10:00pm</td>
+                <td>Intuit Dome</td>
+          <tr>
+
+          </tr>
+            <td>Soccer ⚽️</td>
+              <td>July 24,2026</td>
+               <td>1:00pm-4:00pm</td>
+                <td>Dignity Heatlh Sports park</td>
+          <tr>
+
+          </tr>
+            <td>Football 🏈</td>
+              <td> February 3,2026</td>
+               <td>3:00pm-6:00pm</td>
+                <td>SoFi Stadium</td>
+          <tr>
+
+          </tr>
+            <td>Hockey 🏒</td>
+             <td>June 20, 2026</td>
+              <td>6:00pm-8:00pm</td>
+               <td>LA Kings Iceland</td>
+
+          <tr>
+
+          </tr>
+
+
+        </table>
+
+        <br>
+
+
+
+
+       
+      </div>
+         
+    
+           
+    
+  </div>
+
+
+  <div class = "secondBG">
+
+
+
+
+     <div class = "registerEvent">
+    
+            <h3 class = "registerHeading">Register for an Event<h3>
+
+              <div class = "form-group">
+
+                <form id = "myForm">
+                
+  <div class="row">
+  <div class="col">
+    <label>Full Name (required)</label>
+    <input type="text" placeholder="Your Name" required>
+    
+    <label>Email (required)</label>
+    <input type="email" placeholder="name@example.com" required>
+
+    <label>Password</label>
+    <input type="password" placeholder="Create a password" id="password">
+
+  </div>
+<div>
+
+
+  
+</div>
+  <div class="col">
+    <label>Age (16 to 80)</label>
+    <input type="number" placeholder="16 to 80" min="16" max="80">
+
+    <label for="choose">Country (select one)</label>
+    <select name="dropdown" id="choose">
+      <option  disabled selected hidden>Choose a Country</option>
+      <option >United States of America</option>
+      <option >Mexico</option>
+      <option >Canada</option>
+      <option >Israel</option>
+      <option >Iran</option>
+      <option >Russia</option>
+    </select>
+
+    <label>Confirm Password</label>
+    <input type="password" placeholder="Type it again" id = "confirm">
+  </div>
+</div>
+
+<div class = "singleOption">
+
+  <p class = "singleTitle">Ticket Type (Choose one)</p>
+
+
+
+  <div class = "options">
+
+<label>
+  <input type="radio" name="ticket" value="standard">
+  Standard
+</label>
+
+<label>
+  <input type="radio" name="ticket" value="vip">
+  VIP
+</label>
+
+<label>
+  <input type="radio" name="ticket" value="student">
+  Student
+</label>
+
+
+  </div>
+
+</div>
+
+
+
+
+<div class = "multiOption">
+  <p class = "multiTitle">Extra Options (Choose any)</p>
+
+  <div class = "options">
+
+
+
+    <label>
+  <input type="checkbox" name="extras" value="parking">
+  Parking
+</label>
+
+<label>
+  <input type="checkbox" name="extras" value="meal">
+  Meal
+</label>
+
+<label>
+  <input type="checkbox" name="extras" value="merch">
+  Merchandise
+</label>
+  </div>
+
+
+  
+
+</div>
+<div class="button-container">
+  <button type="submit" class="submit-btn">Submit</button>
+  <button type="reset" class="reset-btn">Reset</button>
+</div>
+   
+                
+              </form>
+
+
+              </div>
+              
+          
+         
+  </div>
+   
+
+
+  <script>
+document.getElementById("myForm").addEventListener("submit", function(e) {
+  e.preventDefault(); 
+  const password = document.getElementById("password").value;
+  const confirm = document.getElementById("confirm").value;
+
+  if (password !== confirm) {
+    alert("Passwords do not match!");
+    return;
+  }
+
+  alert("Form submitted successfully!");
+});
+</script>
+
+  
+ 
+
+</Body>
+</html>
