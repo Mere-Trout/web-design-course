@@ -1,0 +1,43 @@
+
+*
+{
+  background-color: blueviolet;
+}
+
+
+.centerBox
+{
+  
+  margin: 10%;
+  margin-left: 33%;
+  background-color: aquamarine;
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  
+  border-color: black;
+  border-style: solid;
+  border-width: 10%;
+  width: 35%;
+  height: 40%;
+  
+  
+
+}
+.headin
+{
+  text-shadow: 2%;
+  margin-top:  5%;
+  margin-bottom:  5%;
+}
+.content
+{
+  margin-bottom: 5%;
+  text-align: center;
+
+}
+.startButton
+{
+ text-align: center;
+ margin-bottom: 5%;
+}
