@@ -1,7 +1,8 @@
 
-*
+body
 {
   background-color: blueviolet;
+  background-image: url(guesser.jpg);
 }
 
 
@@ -10,7 +11,7 @@
   
   margin: 10%;
   margin-left: 33%;
-  background-color: aquamarine;
+  background-color: greenyellow;
   display: grid;
   place-items: center;
   justify-content: center;
@@ -20,21 +21,38 @@
   border-width: 10%;
   width: 35%;
   height: 40%;
-  
+  border-radius: 10px;
   
 
 }
-.headin
+.headin h4
 {
   text-shadow: 2%;
   margin-top:  5%;
   margin-bottom:  5%;
+  background-color: purple;
+  border-radius: 10px;
+  padding: 10px;
+}
+.headin 
+{
+  text-shadow: 2%;
+  margin-top:  5%;
+  margin-bottom:  5%;
+  background-color: greenyellow;
 }
 .content
 {
   margin-bottom: 5%;
   text-align: center;
+  background-color:greenyellow;
 
+}
+.content p
+{
+   margin-bottom: 5%;
+  text-align: center;
+  background-color: greenyellow;
 }
 .startButton
 {
