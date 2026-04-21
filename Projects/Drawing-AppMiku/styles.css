@@ -5,7 +5,6 @@ body {
     color: white;
 }
 
-/* Top bar */
 .top-bar {
     display: flex;
     justify-content: flex-end;
@@ -20,7 +19,6 @@ body {
     height: 150px;
 }
 
-/* Center layout */
 .container {
     display: flex;
     justify-content: center;
@@ -37,7 +35,6 @@ canvas {
     cursor: crosshair;
 }
 
-/* Miku sitting image */
 .miku-sit {
     position: absolute;
     bottom: 100px;
@@ -53,7 +50,6 @@ canvas {
     align-items: center;
 }
 
-/* Toolbar now sits under canvas */
 .toolbar {
     width: 100%;
     max-width: 585px;
@@ -69,7 +65,6 @@ canvas {
     padding: 0 10px;
 }
 
-/* Colors */
 .colors {
     display: flex;
     gap: 10px;
@@ -84,7 +79,6 @@ canvas {
     box-shadow: 0 0 6px #39c5bb;
 }
 
-/* Tools */
 .tools button {
     margin-left: 10px;
     padding: 6px 10px;

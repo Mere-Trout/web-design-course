@@ -4,15 +4,16 @@ const ctx = canvas.getContext("2d");
 let drawing = false;
 let currentColor = "#000000";
 
-// Drawing events
 canvas.addEventListener("mousedown", () => drawing = true);
-canvas.addEventListener("mouseup", () => {
+canvas.addEventListener("mouseup", () => 
+{
     drawing = false;
     ctx.beginPath();
 });
 canvas.addEventListener("mousemove", draw);
 
-function draw(e) {
+function draw(e) 
+{
     if (!drawing) return;
 
     ctx.fillStyle = currentColor;
@@ -21,19 +22,20 @@ function draw(e) {
     ctx.fill();
 }
 
-// 🎨 Color selection
-document.querySelectorAll(".color").forEach(btn => {
-    btn.addEventListener("click", () => {
+document.querySelectorAll(".color").forEach(btn => 
+{
+    btn.addEventListener("click", () => 
+    {
         currentColor = btn.dataset.color;
     });
 });
 
-// 🧽 Eraser (draws in white)
-document.getElementById("eraser").addEventListener("click", () => {
+document.getElementById("eraser").addEventListener("click", () => 
+{
     currentColor = "#ffffff";
 });
 
-// 🗑️ Clear canvas
-document.getElementById("clear").addEventListener("click", () => {
+document.getElementById("clear").addEventListener("click", () => 
+{
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 });
