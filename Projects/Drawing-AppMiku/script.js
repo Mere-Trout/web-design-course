@@ -1,41 +1,55 @@
 const canvas = document.getElementById("drawCanvas");
-const ctx = canvas.getContext("2d");
+const pointer = canvas.getContext("2d");
 
 let drawing = false;
 let currentColor = "#000000";
 
-canvas.addEventListener("mousedown", () => drawing = true);
+
+pointer.lineWidth = 3;
+pointer.lineCap = "round";   
+pointer.lineJoin = "round";    
+
+// Start drawing
+canvas.addEventListener("mousedown", (e) => 
+{
+    drawing = true;
+    pointer.beginPath();
+    pointer.moveTo(e.offsetX, e.offsetY); 
+});
+
+
 canvas.addEventListener("mouseup", () => 
 {
     drawing = false;
-    ctx.beginPath();
+    pointer.beginPath(); 
 });
-canvas.addEventListener("mousemove", draw);
 
-function draw(e) 
+
+canvas.addEventListener("mousemove", (e) => 
 {
     if (!drawing) return;
 
-    ctx.fillStyle = currentColor;
-    ctx.beginPath();
-    ctx.arc(e.offsetX, e.offsetY, 3, 0, Math.PI * 2);
-    ctx.fill();
-}
+    pointer.strokeStyle = currentColor;
+    pointer.lineTo(e.offsetX, e.offsetY);
+    pointer.stroke();
+});
+
 
 document.querySelectorAll(".color").forEach(btn => 
 {
-    btn.addEventListener("click", () => 
-    {
+    btn.addEventListener("click", () => {
         currentColor = btn.dataset.color;
     });
 });
+
 
 document.getElementById("eraser").addEventListener("click", () => 
 {
     currentColor = "#ffffff";
 });
 
+
 document.getElementById("clear").addEventListener("click", () => 
 {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    pointer.clearRect(0, 0, canvas.width, canvas.height);
 });
